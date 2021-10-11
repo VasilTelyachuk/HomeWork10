@@ -1,6 +1,6 @@
 body {
   font-size: 15px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: normal;
   color: #999999;
   font-family: "Roboto", sans-serif;
@@ -8,6 +8,12 @@ body {
 .wrapper {
   width: 1920px;
   margin: 0px auto;
+  position: relative;
+}
+.header {
+  position: absolute;
+  left: 360px;
+  z-index: 5;
 }
 .container {
   width: 1201px;
@@ -17,13 +23,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 25px;
+  padding-top: 37px;
   margin: 0px auto;
-  margin-bottom: 122px;
-}
+  }
 .logo {
   text-decoration: none;
-  color: #95e1d3;
+  color: #ffffff;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -50,12 +55,12 @@ body {
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
-  color: #95e1d3;
+  color: #ffffff;
   transition-property: color;
   transition-duration: 200ms;
 }
 .main-nav__link:hover {
-  color: rgba(249, 129, 129, 1);
+  color: rgba(252, 227, 138, 1);
 }
 .main-nav__link::after {
   display: block;
@@ -68,9 +73,61 @@ body {
 }
 .main-nav__link:hover::after {
   display: block;
-  background-color: rgba(249, 129, 129, 1);
+  background-color: rgba(252, 227, 138, 1);
   transform: translateY(10px);
 }
+.performance-box {
+  background-image: url(../img/picturex1-min.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 54px;
+}
+.performance {
+  display: flex;
+  margin: 0px auto;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  background: linear-gradient( 360deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  padding-top: 210px;
+  opacity: 0.9;
+}
+@media (min-resolution: 192px),(min-resolution: 2dppx) {
+  .performance {
+    background-image: url(../img/picture@2x-min.jpg);
+  }
+}
+.performance__text {
+  font-size: 72px;
+  /* line-height: 86px; */
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.performance__title {
+  font-size: 150px;
+  line-height: 140px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 980px;
+  margin: 0px;
+  margin-bottom: 110px;
+}
+.performance__btn {
+  background-color: transparent;
+  width: 160px;
+  height: 40px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  margin-bottom: 230px;
+  }
 
 .services {
   display: flex;
