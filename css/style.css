@@ -6,7 +6,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .wrapper {
-  /* width: 1920px; */
   margin: 0px auto;
   position: relative;
 }
@@ -35,19 +34,19 @@ body {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
-.main-nav-menu {
+.nav-menu {
   display: flex;
   margin: 0px;
   padding: 0px;
 }
-.main-nav__item {
+.nav-menu__item {
   list-style: none;
   text-transform: uppercase;
 }
-.main-nav__item:not(:nth-child(7n)) {
+.nav-menu__item:not(:nth-child(7n)) {
   margin-right: 53px;
 }
-.main-nav__link {
+.nav-menu__link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,15 +58,15 @@ body {
   transition-property: color;
   transition-duration: 200ms;
 }
-.main-nav__icon {
+.nav-menu__icon {
   fill: #ffffff;
 }
-.main-nav__link:hover,
-.main-nav__icon:hover {
+.nav-menu__link:hover,
+.nav-menu__icon:hover {
   color: rgba(252, 227, 138, 1);
   fill: rgba(252, 227, 138, 1);
 }
-.main-nav__link::after {
+.nav-menu__link::after {
   display: block;
   content: "";
   width: 100%;
@@ -76,10 +75,18 @@ body {
   transition-property: transform, background-color;
   transition-duration: 200ms;
 }
-.main-nav__link:hover::after {
+.nav-menu__link:hover::after {
   display: block;
   background-color: rgba(252, 227, 138, 1);
   transform: translateY(10px);
+}
+/* ..nav-menu__link::after:not(:last-of-type (-n+2)) {
+
+} */
+@media (min-resolution: 192px), (min-resolution: 2dppx) {
+  .performance-box {
+    background-image: url(../img/picture@2x-min.jpg);
+  }
 }
 .performance-box {
   background-image: url(../img/picturex1-min.jpg);
@@ -101,11 +108,6 @@ body {
   );
   padding-top: 210px;
   opacity: 0.9;
-}
-@media (min-resolution: 192px), (min-resolution: 2dppx) {
-  .performance {
-    background-image: url(../img/picture@2x-min.jpg);
-  }
 }
 .performance__text {
   font-size: 72px;
@@ -143,7 +145,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1186px;
+  width: 1182px;
   margin: 0px auto;
   margin-bottom: 96px;
 }
@@ -178,37 +180,33 @@ body {
 .services-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0px auto;
   padding: 0px;
 }
-.services__item {
+.services-menu__item {
   display: flex;
-  justify-content: space-around;
-  width: 382px;
+  width: 381px;
   margin-bottom: 0px;
 }
-.services__item:not(:nth-child(3n)) {
-  margin-right: 20px;
-}
-.services__item:nth-child(-n + 3) {
+.services-menu__item:nth-child(-n + 3) {
   margin-bottom: 98px;
 }
 .services-menu__icon {
   fill: #95e1d3;
+  padding: 0px 25px;
 }
-.content {
-  width: 300px;
-}
-.services-name {
+.content__name {
   color: #333333;
   font-size: 14px;
   line-height: 17px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   margin: 0px;
+  margin-bottom: 16px;
 }
-.info {
+.content__info {
   margin: 0px;
 }
 
@@ -286,9 +284,6 @@ body {
   width: 56px;
   height: 56px;
   background-color: #fce38a;
-  background-image: url(../img/facebook.png);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   transition-property: background-color;
   transition-duration: 200ms;
@@ -321,18 +316,14 @@ body {
   font-style: italic;
 }
 .footer {
-  width: 1201px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 17px;
   margin: auto;
   margin-bottom: 13px;
-  display: flex;
-  flex-direction: column;
-}
+  }
 .footer-box {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -340,19 +331,20 @@ body {
   color: #f6a1a1;
   text-decoration: none;
 }
-.footer-button {
+.btn {
+  display: flex;
+  justify-content: end;
+}
+.btn__button {
   border: none;
   width: 150px;
   height: 40px;
   padding: 0px;
   background-color: #95e1d3;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
-}
-.btn {
-  display: flex;
-  justify-content: end;
+  cursor: pointer;
 }
 .btn__search {
   font-weight: 300;
@@ -361,6 +353,7 @@ body {
   border-color: #e5e5e5;
   border-style: solid;
   border-right: none;
+  outline: none;
 }
 .footer::before {
   display: flex;
@@ -371,3 +364,6 @@ body {
   margin: auto;
   margin-bottom: 26px;
 }
+.key-subject:focus {
+  outline: none;
+        }
