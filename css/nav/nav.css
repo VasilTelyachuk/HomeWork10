@@ -1,8 +1,12 @@
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px;
   margin-right: 53px;
@@ -19,15 +23,26 @@
 }
 
 .nav-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
   transition-property: color;
-  transition-duration: 200ms;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .nav-menu__link::after {
@@ -36,8 +51,14 @@
   width: 100%;
   height: 3px;
   background-color: rgba(249, 129, 129, 0);
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  -o-transition-property: transform, background-color;
   transition-property: transform, background-color;
-  transition-duration: 200ms;
+  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 .nav-menu__link:hover {
@@ -47,7 +68,9 @@
 .nav-menu__link:hover::after {
   display: block;
   background-color: rgba(252, 227, 138, 1);
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .option-form__icon {
