@@ -29,7 +29,7 @@
           align-items: center;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  background: -webkit-gradient(
+  background: -webkit- gradient(
     linear,
     left bottom, left top,
     from(rgb(252, 227, 138)),
