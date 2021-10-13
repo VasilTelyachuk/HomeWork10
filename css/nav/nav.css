@@ -49,3 +49,15 @@
   background-color: rgba(252, 227, 138, 1);
   transform: translateY(10px);
 }
+
+.option-form__icon {
+  fill: #ffffff;
+}
+
+.buy {
+  margin-right: 41px;
+}
+
+.option-form__icon:hover {
+  fill: rgba(252, 227, 138, 1);
+}

@@ -1,0 +1,132 @@
+.section-team-mb {
+  margin-bottom: 80px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__text {
+  margin-bottom: 15px;
+}
+
+.team__title::after {
+  margin-bottom: 48px;
+}
+
+.team__info {
+  margin: 0px auto;
+  margin-bottom: 118px;
+  max-width: 980px;
+  text-align: center;
+}
+
+.team-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.team-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.team-menu__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.team-menu__box {
+  display: flex;
+  background-color: #95e1d3;
+  margin-bottom: 30px;
+}
+
+.team-cart {
+  display: flex;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.team-menu__box:hover .team-cart {
+  transform: translate(-10px, -10px);
+}
+
+.wrap-socials {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 470px;
+  opacity: 0%;
+  transition-property: transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+}
+
+.team-menu__box:hover .wrap-socials {
+  transform: translate(-10px, -10px);
+  opacity: 100%;
+}
+
+.wrap-socials__massengers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: none;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.wrap-socials__massengers:hover {
+  background-color: #f38181;
+}
+
+.wrap-socials__massengers:not(:nth-child(4n)) {
+  margin-right: 1px;
+}
+
+.wrap-socials__icon {
+  fill: #f38181;
+}
+
+.wrap-socials__massengers:hover .wrap-socials__icon {
+  fill: #ffffff;
+  stroke: #333333;
+}
+
+.team-menu__name {
+  color: #333333;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 13px;
+}
+
+.team-menu__position {
+  font-weight: 300;
+  font-style: italic;
+}

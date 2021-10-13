@@ -1,0 +1,56 @@
+.footer {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    margin: auto;
+    margin-bottom: 13px;
+  }
+  
+  .footer::before {
+    display: flex;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: auto;
+    margin-bottom: 26px;
+  }
+  
+  .footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-box__creater {
+    color: #f6a1a1;
+    text-decoration: none;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .form__search {
+    font-weight: 300;
+    font-style: italic;
+    color: #e5e5e5;
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-right: none;
+    outline: none;
+  }
+  
+  .form__button {
+    border: none;
+    width: 150px;
+    height: 40px;
+    padding: 0px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  

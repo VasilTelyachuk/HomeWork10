@@ -1,9 +1,12 @@
+.div-performance-mb {
+  margin-bottom: 54px;
+}
+
 .performance {
   background-image: url(../../img/picturex1-min.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 54px;
 }
 
 @media (min-resolution: 192px), (min-resolution: 2dppx) {
@@ -17,6 +20,7 @@
   margin: 0px auto;
   flex-direction: column;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   background: linear-gradient(
     360deg,
@@ -27,34 +31,39 @@
   opacity: 0.9;
 }
 
-.performance__text {
+.header-text {
   font-size: 72px;
   font-family: "Kaushan Script", sans-serif;
   font-weight: 400;
+}
+
+.performance__text {
   margin-bottom: 40px;
 }
 
-.performance__title {
+.header-title {
   font-size: 150px;
   line-height: 140px;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  max-width: 980px;
   margin: 0px;
+}
+
+.performance__title {
+  max-width: 980px;
   margin-bottom: 110px;
 }
 
 .performance__btn {
   margin-bottom: 230px;
 }
-.btn-section {
+
+.section-btn {
   background-color: transparent;
   width: 160px;
   height: 40px;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   border: 3px solid #ffffff;
   color: #ffffff;
